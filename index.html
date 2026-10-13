@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Night Picker</title>
+</head>
+<body>
+    
+    <div id="wrapper"></div>
+        <h1>Welcome to Movie Night Picker</h1>
+    
+    <div id="controls">
+        <button id="sortTitle">Sort by Title</button>
+        <button id="sortYear">Sort by Year</button>
+        <button id="pickForme">Pick for me</button>
+
+        <select id="genreFilter">
+            <option value="all">All Genres</option>
+            <option value="action">Action</option>
+            <option value="comedy">Comedy</option>
+            <option value="drama">Drama</option>
+            <option value="horror">Horror</option>
+            <option value="sci-fi">Sci-Fi</option>
+        </select>
+
+        <div id="movie-list"></div>
+
+        <div id="movieCount"></div>
+
+        <script src="script.js"></script>
+
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: greenyellow;
+                h1 {
+                    text-align: center;
+                    margin-bottom: 20px;
+                    margin-right: 30px;
+                    align-items: center;
+                    color: purple
+                
+                }
+                 #sortTitle, #sortYear, #pickForme {
+                margin: 5px;
+                padding: 10px;
+                font-size: 16px;
+                background-color: purple;
+                color: white;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+                }
+    
+            }
+
+
+            
+            #genreFilter {
+                margin: 5px;
+                padding: 10px;
+                font-size: 16px;
+                text-align: center;
+                display: inline-block;
+                background-color: purple;
+                color: white;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
+  
+
+            #movie-list {
+            
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;  
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                padding: 10px;
+                background-color: green;
+                border-radius: 5px;
+                border: 3px solid black;
+                color: white;
+               
+            }
+
+            #movieCount {
+                text-align: center;
+                margin-top: 10px;
+                font-size: 18px;
+                border-width: 3px;
+                border-style: solid;
+                border-color: black;
+                border-radius: 5px;
+                padding: 10px;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+
+
+        </style>
+    
+</body>
+</html>
